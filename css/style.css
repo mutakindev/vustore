@@ -5215,8 +5215,7 @@ a.text-grey:hover, a.text-grey:focus {
 
 body {
   font-family: "Lato", sans-serif;
-  color: #5f6368;
-  margin-bottom: 1000px; }
+  color: #5f6368; }
   body::-webkit-scrollbar {
     width: 7px; }
   body::-webkit-scrollbar-track {
@@ -5227,16 +5226,19 @@ body {
       background-color: #525a61; }
 
 .page-home .hero {
-  margin-top: 120px; }
+  margin-top: 50px; }
+  @media (min-width: 992px) {
+    .page-home .hero {
+      margin-top: 120px; } }
   .page-home .hero::before {
     content: "";
-    position: absolute;
+    right: 0;
+    top: 0;
     width: 50%;
     height: 75vh;
-    background-color: #f1fdfa;
-    top: 0;
-    right: 0;
     z-index: -1;
+    position: absolute;
+    background-color: #f1fdfa;
     border-bottom-left-radius: 400px; }
   .page-home .hero .hero-title {
     font-family: "Montserrat", sans-serif;
@@ -5245,6 +5247,9 @@ body {
   .page-home .hero .hero-desc {
     line-height: 30px;
     margin-bottom: 45px; }
+    @media (max-width: 991.98px) {
+      .page-home .hero .hero-desc {
+        max-width: 500px; } }
   .page-home .hero .hero-form .form-control {
     width: 300px; }
   .page-home .hero .hero-carousel .carousel-control-prev-icon {

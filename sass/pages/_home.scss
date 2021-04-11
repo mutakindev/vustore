@@ -1,16 +1,19 @@
 .page-home {
     .hero {
-        margin-top: 120px;
+        margin-top: 50px;
+        @include media-breakpoint-up(lg) {
+            margin-top: 120px;
+        }
 
         &::before {
             content: "";
-            position: absolute;
+            right: 0;
+            top: 0;
             width: 50%;
             height: 75vh;
-            background-color: $softprimary;
-            top: 0;
-            right: 0;
             z-index: -1;
+            position: absolute;
+            background-color: $softprimary;
             border-bottom-left-radius: 400px;
         }
 
@@ -23,6 +26,9 @@
         .hero-desc {
             line-height: 30px;
             margin-bottom: 45px;
+            @include media-breakpoint-down(md) {
+                max-width: 500px;
+            }
         }
 
         .hero-form {
