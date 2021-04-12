@@ -5244,6 +5244,9 @@ body {
     font-family: "Montserrat", sans-serif;
     line-height: 60px;
     margin-bottom: 20px; }
+    @media (min-width: 992px) {
+      .page-home .hero .hero-title {
+        margin-top: 50px; } }
   .page-home .hero .hero-desc {
     line-height: 30px;
     margin-bottom: 45px; }
