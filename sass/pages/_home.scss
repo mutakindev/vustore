@@ -56,4 +56,36 @@
             }
         }
     }
+
+    .room-ideas{
+        height: 447px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+
+        .scrolling-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            padding-bottom: 10px;
+
+             &::-webkit-scrollbar {
+                height: 7px;
+            }
+            
+            &::-webkit-scrollbar-track {
+                background-color: #edeef2;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                border-radius: 5px;
+                background-color: #00887b;
+
+                &:hover {
+                    background-color: #525a61;
+                }
+            }
+            
+            -webkit-overflow-scrolling: touch;
+        }
+    }
 }
