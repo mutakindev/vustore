@@ -57,35 +57,175 @@
         }
     }
 
-    .room-ideas{
-        height: 447px;
+    #categories{
         padding-top: 50px;
         padding-bottom: 50px;
-
-
-        .scrolling-wrapper {
-            width: 100%;
-            overflow-x: auto;
-            padding-bottom: 10px;
-
-             &::-webkit-scrollbar {
-                height: 7px;
+        .product-category{
+            padding: 50px;
+            background: #FDFDFF;
+            box-shadow: 0px 100px 80px rgba(56, 56, 69, 0.01), 0px 12px 10px rgba(56, 56, 69, 0.02);
+            border-radius: 15px;
+    
+    
+            .title{
+                font-family: "DM Sans", sans-serif;
+                font-weight: bold;
+                font-size: 24px;
             }
-            
-            &::-webkit-scrollbar-track {
-                background-color: #edeef2;
-            }
-            
-            &::-webkit-scrollbar-thumb {
-                border-radius: 5px;
-                background-color: #00887b;
+    
+            .category-item{
+                border: 1px solid #E5EEED;
+                background-color: #F9FAFC;
+                border-radius: 15px 30px;
+                padding: 50px;
+                @media screen and (max-width: 570px) {
+                    padding: 8px;
+                }
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .category-icon{
+                    background-color: #F1FDFA;
+                    border: 1px solid #E5EEED;
+                    padding: 15px;
+                    border-radius: 50%;
+                    .category-img-icon{
+                        width: 61.4px;
+                        height: 61.4px;
 
-                &:hover {
-                    background-color: #525a61;
+                        @media screen and (max-width: 570px) {
+                            width: 30px;
+                            height: 30px;
+                        }
+                        
+                    }
+                }
+    
+                .category-label{
+                    margin-top: 18px;
+                    @media screen and (max-width: 570px) {
+                        margin-top: 8px;
+                    }
                 }
             }
-            
-            -webkit-overflow-scrolling: touch;
+        }
+    }
+
+
+     #new-products{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .products{
+            padding: 50px;
+            background: #FDFDFF;
+            box-shadow: 0px 100px 80px rgba(56, 56, 69, 0.01), 0px 12px 10px rgba(56, 56, 69, 0.02);
+            border-radius: 15px;
+    
+    
+            .title{
+                font-family: "DM Sans", sans-serif;
+                font-weight: bold;
+                font-size: 24px;
+            }
+
+            .product-item{
+                position: relative;
+                background: #F9FAFC;
+                border: 1px solid #E7EAEF;
+                box-sizing: border-box;
+                .diskon-label{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 5px;
+                    font-size: 8px;
+                    font-weight: bold;
+                }
+
+                .cart-icon{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    margin: 8px;
+                    img{
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+
+
+                .product-img{
+                    width: 100%;
+                    height: 152px;
+                    background: #F1FDFA;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 60%;
+                    }
+                }
+
+                .product-detail{
+                    h3{
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 1.5;
+                    }
+
+                    .diskon-price{
+                        font-family: 'DM Sans', sans-serif;
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
+
+                    .real-price{
+                        font-family: 'DM Sans', sans-serif;
+                        font-size: 10px;
+                        font-weight: bold;
+                        color: #C2C1BF;
+                        text-decoration: line-through;
+                    }
+
+
+                    
+                    .favorite-icon{
+                        cursor: pointer;
+                        img{
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+
+                    .product-ratings{
+                        .star{
+                            width: 15px;
+                            height: 15px;
+                            margin-right: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #room-ideas{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .room-ideas{
+            padding: 50px;
+            background: #FDFDFF;
+            box-shadow: 0px 100px 80px rgba(56, 56, 69, 0.01), 0px 12px 10px rgba(56, 56, 69, 0.02);
+            border-radius: 15px;
+
+
+            .title{
+                font-family: "DM Sans", sans-serif;
+                font-weight: bold;
+                font-size: 24px;
+            }
+
         }
     }
 }

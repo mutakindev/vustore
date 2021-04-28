@@ -6669,6 +6669,7 @@ a.text-grey:hover, a.text-grey:focus {
 body {
   font-family: "Lato", sans-serif;
   color: #5f6368;
+  background-color: #F9FAFC;
 }
 body::-webkit-scrollbar {
   width: 7px;
@@ -6735,29 +6736,153 @@ body::-webkit-scrollbar-thumb:hover {
   width: 35px;
   height: 35px;
 }
-.page-home .room-ideas {
-  height: 447px;
+.page-home #categories {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.page-home .room-ideas .scrolling-wrapper {
+.page-home #categories .product-category {
+  padding: 50px;
+  background: #FDFDFF;
+  box-shadow: 0px 100px 80px rgba(56, 56, 69, 0.01), 0px 12px 10px rgba(56, 56, 69, 0.02);
+  border-radius: 15px;
+}
+.page-home #categories .product-category .title {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+.page-home #categories .product-category .category-item {
+  border: 1px solid #E5EEED;
+  background-color: #F9FAFC;
+  border-radius: 15px 30px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 570px) {
+  .page-home #categories .product-category .category-item {
+    padding: 8px;
+  }
+}
+.page-home #categories .product-category .category-item .category-icon {
+  background-color: #F1FDFA;
+  border: 1px solid #E5EEED;
+  padding: 15px;
+  border-radius: 50%;
+}
+.page-home #categories .product-category .category-item .category-icon .category-img-icon {
+  width: 61.4px;
+  height: 61.4px;
+}
+@media screen and (max-width: 570px) {
+  .page-home #categories .product-category .category-item .category-icon .category-img-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+.page-home #categories .product-category .category-item .category-label {
+  margin-top: 18px;
+}
+@media screen and (max-width: 570px) {
+  .page-home #categories .product-category .category-item .category-label {
+    margin-top: 8px;
+  }
+}
+.page-home #new-products {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.page-home #new-products .products {
+  padding: 50px;
+  background: #FDFDFF;
+  box-shadow: 0px 100px 80px rgba(56, 56, 69, 0.01), 0px 12px 10px rgba(56, 56, 69, 0.02);
+  border-radius: 15px;
+}
+.page-home #new-products .products .title {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+.page-home #new-products .products .product-item {
+  position: relative;
+  background: #F9FAFC;
+  border: 1px solid #E7EAEF;
+  box-sizing: border-box;
+}
+.page-home #new-products .products .product-item .diskon-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  font-size: 8px;
+  font-weight: bold;
+}
+.page-home #new-products .products .product-item .cart-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px;
+}
+.page-home #new-products .products .product-item .cart-icon img {
+  width: 24px;
+  height: 24px;
+}
+.page-home #new-products .products .product-item .product-img {
   width: 100%;
-  overflow-x: auto;
-  padding-bottom: 10px;
-  -webkit-overflow-scrolling: touch;
+  height: 152px;
+  background: #F1FDFA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.page-home .room-ideas .scrolling-wrapper::-webkit-scrollbar {
-  height: 7px;
+.page-home #new-products .products .product-item .product-img img {
+  width: 60%;
 }
-.page-home .room-ideas .scrolling-wrapper::-webkit-scrollbar-track {
-  background-color: #edeef2;
+.page-home #new-products .products .product-item .product-detail h3 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
 }
-.page-home .room-ideas .scrolling-wrapper::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: #00887b;
+.page-home #new-products .products .product-item .product-detail .diskon-price {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
 }
-.page-home .room-ideas .scrolling-wrapper::-webkit-scrollbar-thumb:hover {
-  background-color: #525a61;
+.page-home #new-products .products .product-item .product-detail .real-price {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: #C2C1BF;
+  text-decoration: line-through;
+}
+.page-home #new-products .products .product-item .product-detail .favorite-icon {
+  cursor: pointer;
+}
+.page-home #new-products .products .product-item .product-detail .favorite-icon img {
+  width: 24px;
+  height: 24px;
+}
+.page-home #new-products .products .product-item .product-detail .product-ratings .star {
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+}
+.page-home #room-ideas {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.page-home #room-ideas .room-ideas {
+  padding: 50px;
+  background: #FDFDFF;
+  box-shadow: 0px 100px 80px rgba(56, 56, 69, 0.01), 0px 12px 10px rgba(56, 56, 69, 0.02);
+  border-radius: 15px;
+}
+.page-home #room-ideas .room-ideas .title {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .navbar-fustore {
@@ -6831,13 +6956,16 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 222.26px;
   height: 299.53px;
   margin: 0 15px;
   background-position: center;
   background-size: cover;
   border-radius: 8px;
-  filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.158));
+}
+.card-idea .idea-title {
+  font-size: 14px;
+  font-weight: 600;
 }
 .card-idea:first-child {
   margin-left: 0;
