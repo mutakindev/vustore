@@ -6736,22 +6736,22 @@ body::-webkit-scrollbar-thumb:hover {
   width: 35px;
   height: 35px;
 }
-.page-home #categories {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.page-home section:not(:first-child) {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
-.page-home #categories .product-category {
+.page-home .content-wrapper {
   padding: 50px;
   background: #FDFDFF;
   box-shadow: 0px 100px 80px rgba(56, 56, 69, 0.01), 0px 12px 10px rgba(56, 56, 69, 0.02);
   border-radius: 15px;
 }
-.page-home #categories .product-category .title {
+.page-home .title {
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
   font-size: 24px;
 }
-.page-home #categories .product-category .category-item {
+.page-home #categories .category-item {
   border: 1px solid #E5EEED;
   background-color: #F9FAFC;
   border-radius: 15px 30px;
@@ -6762,56 +6762,41 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
 }
 @media screen and (max-width: 570px) {
-  .page-home #categories .product-category .category-item {
+  .page-home #categories .category-item {
     padding: 8px;
   }
 }
-.page-home #categories .product-category .category-item .category-icon {
+.page-home #categories .category-item .category-icon {
   background-color: #F1FDFA;
   border: 1px solid #E5EEED;
   padding: 15px;
   border-radius: 50%;
 }
-.page-home #categories .product-category .category-item .category-icon .category-img-icon {
+.page-home #categories .category-item .category-icon .category-img-icon {
   width: 61.4px;
   height: 61.4px;
 }
 @media screen and (max-width: 570px) {
-  .page-home #categories .product-category .category-item .category-icon .category-img-icon {
+  .page-home #categories .category-item .category-icon .category-img-icon {
     width: 30px;
     height: 30px;
   }
 }
-.page-home #categories .product-category .category-item .category-label {
+.page-home #categories .category-item .category-label {
   margin-top: 18px;
 }
 @media screen and (max-width: 570px) {
-  .page-home #categories .product-category .category-item .category-label {
+  .page-home #categories .category-item .category-label {
     margin-top: 8px;
   }
 }
-.page-home #new-products {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.page-home #new-products .products {
-  padding: 50px;
-  background: #FDFDFF;
-  box-shadow: 0px 100px 80px rgba(56, 56, 69, 0.01), 0px 12px 10px rgba(56, 56, 69, 0.02);
-  border-radius: 15px;
-}
-.page-home #new-products .products .title {
-  font-family: "DM Sans", sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-}
-.page-home #new-products .products .product-item {
+.page-home #new-products .product-item {
   position: relative;
   background: #F9FAFC;
   border: 1px solid #E7EAEF;
   box-sizing: border-box;
 }
-.page-home #new-products .products .product-item .diskon-label {
+.page-home #new-products .product-item .diskon-label {
   position: absolute;
   top: 0;
   left: 0;
@@ -6819,17 +6804,17 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 8px;
   font-weight: bold;
 }
-.page-home #new-products .products .product-item .cart-icon {
+.page-home #new-products .product-item .cart-icon {
   position: absolute;
   top: 0;
   right: 0;
   margin: 8px;
 }
-.page-home #new-products .products .product-item .cart-icon img {
+.page-home #new-products .product-item .cart-icon img {
   width: 24px;
   height: 24px;
 }
-.page-home #new-products .products .product-item .product-img {
+.page-home #new-products .product-item .product-img {
   width: 100%;
   height: 152px;
   background: #F1FDFA;
@@ -6837,52 +6822,62 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   align-items: center;
 }
-.page-home #new-products .products .product-item .product-img img {
+.page-home #new-products .product-item .product-img img {
   width: 60%;
 }
-.page-home #new-products .products .product-item .product-detail h3 {
+.page-home #new-products .product-item .product-detail h3 {
   font-size: 12px;
   font-weight: 600;
   line-height: 1.5;
 }
-.page-home #new-products .products .product-item .product-detail .diskon-price {
+.page-home #new-products .product-item .product-detail .diskon-price {
   font-family: "DM Sans", sans-serif;
   font-size: 15px;
   font-weight: bold;
 }
-.page-home #new-products .products .product-item .product-detail .real-price {
+.page-home #new-products .product-item .product-detail .real-price {
   font-family: "DM Sans", sans-serif;
   font-size: 10px;
   font-weight: bold;
   color: #C2C1BF;
   text-decoration: line-through;
 }
-.page-home #new-products .products .product-item .product-detail .favorite-icon {
+.page-home #new-products .product-item .product-detail .favorite-icon {
   cursor: pointer;
 }
-.page-home #new-products .products .product-item .product-detail .favorite-icon img {
+.page-home #new-products .product-item .product-detail .favorite-icon img {
   width: 24px;
   height: 24px;
 }
-.page-home #new-products .products .product-item .product-detail .product-ratings .star {
+.page-home #new-products .product-item .product-detail .product-ratings .star {
   width: 15px;
   height: 15px;
   margin-right: 3px;
 }
-.page-home #room-ideas {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.page-home #room-ideas .room-ideas {
-  padding: 50px;
-  background: #FDFDFF;
-  box-shadow: 0px 100px 80px rgba(56, 56, 69, 0.01), 0px 12px 10px rgba(56, 56, 69, 0.02);
+.page-home #special-offers div.left {
   border-radius: 15px;
+  background-color: #d6680f;
+  overflow: hidden;
 }
-.page-home #room-ideas .room-ideas .title {
-  font-family: "DM Sans", sans-serif;
-  font-weight: bold;
-  font-size: 24px;
+@media (max-width: 567px) {
+  .page-home #special-offers div.left {
+    margin-bottom: 10px;
+  }
+  .page-home #special-offers div.left .offer-title, .page-home #special-offers div.left .offer-desc {
+    font-size: 18px;
+  }
+}
+.page-home #special-offers div.left .offer-img img {
+  width: 100%;
+}
+@media (max-width: 567px) {
+  .page-home #special-offers div.right {
+    padding: 0;
+  }
+}
+.page-home #special-offers div.right img {
+  width: 100%;
+  border-radius: 15px;
 }
 
 .navbar-fustore {

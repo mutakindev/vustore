@@ -105,9 +105,8 @@
 
         <section id="categories">
             <div class="container">
-                <div class="product-category" data-aos="fade-right" data-aos-duration="500">
+                <div class="content-wrapper" data-aos="fade-right" data-aos-duration="500">
                     <h1 class="title">PRODUCT <span class="text-primary">CATEGORY</span></h1>
-                    <!-- Set up your HTML -->
                     <div class="owl-carousel category-slider mt-4">
                         <div class="category-item" data-aos="fade-up" data-aos-duration="700">
                             <div class="category-icon">
@@ -155,9 +154,8 @@
         </section>
         <section id="new-products">
             <div class="container">
-                <div class="products"  data-aos="fade-left">
+                <div class="content-wrapper" data-aos="fade-left">
                     <h1 class="title">NEW <span class="text-primary">PRODUCTS</span></h1>
-                    <!-- Set up your HTML -->
                     <div class="owl-carousel products-slider mt-4">
                         <div class="product-item" data-aos="fade-up">
                             <div
@@ -179,7 +177,8 @@
                                     <div class="px-1"></div>
                                     <p class="real-price text-grey">$60.89</p>
                                 </div>
-                                <div class="d-flex justify-content-between align-items-center">
+                                <div
+                                    class="d-flex flex-column flex-md-row justify-content-between align-items-end align-items-md-center">
                                     <div class="product-ratings">
                                         <div class="d-flex align-items-center">
                                             <img src="./images/icons/Star.svg" alt="Star" class="star">
@@ -201,11 +200,22 @@
         </section>
         <section id="room-ideas">
             <div class="container">
-                <div class="room-ideas" data-aos="fade-up-right">
+                <div class="content-wrapper" data-aos="fade-up-right">
                     <h1 class="title">ROOM <span class="text-primary">OF IDEAS</span></h1>
-                    <!-- Set up your HTML -->
                     <div class="owl-carousel room-ideas-slider mt-4">
-                        <div class="card card-idea" style="background-image: url(images/bg-idea.jpg);" data-aos="zoom-in">
+                        <div class="card card-idea" style="background-image: url(images/bg-idea.jpg);"
+                            data-aos="zoom-in">
+                            <div class="card-body p-3">
+                                <p class="idea-title text-dark max-"><b>Informa</b> Luncurkan pengalaman berbelanja
+                                    dengan
+                                    gaya modern</p>
+                                <a href="#"
+                                    class="btn btn-primary d-inline-flex align-items-center justify-content-center">Read
+                                    More</a>
+                            </div>
+                        </div>
+                        <div class="card card-idea" style="background-image: url(images/bg-idea.jpg);"
+                            data-aos="zoom-in">
                             <div class="card-body p-3">
                                 <p class="idea-title text-dark"><b>Informa</b> Luncurkan pengalaman berbelanja dengan
                                     gaya modern</p>
@@ -214,7 +224,8 @@
                                     More</a>
                             </div>
                         </div>
-                        <div class="card card-idea" style="background-image: url(images/bg-idea.jpg);" data-aos="zoom-in">
+                        <div class="card card-idea" style="background-image: url(images/bg-idea.jpg);"
+                            data-aos="zoom-in">
                             <div class="card-body p-3">
                                 <p class="idea-title text-dark"><b>Informa</b> Luncurkan pengalaman berbelanja dengan
                                     gaya modern</p>
@@ -223,16 +234,8 @@
                                     More</a>
                             </div>
                         </div>
-                        <div class="card card-idea" style="background-image: url(images/bg-idea.jpg);" data-aos="zoom-in">
-                            <div class="card-body p-3">
-                                <p class="idea-title text-dark"><b>Informa</b> Luncurkan pengalaman berbelanja dengan
-                                    gaya modern</p>
-                                <a href="#"
-                                    class="btn btn-primary d-inline-flex align-items-center justify-content-center">Read
-                                    More</a>
-                            </div>
-                        </div>
-                        <div class="card card-idea" style="background-image: url(images/bg-idea.jpg);" data-aos="zoom-in">
+                        <div class="card card-idea" style="background-image: url(images/bg-idea.jpg);"
+                            data-aos="zoom-in">
                             <div class="card-body p-3">
                                 <p class="idea-title text-dark"><b>Informa</b> Luncurkan pengalaman berbelanja dengan
                                     gaya modern</p>
@@ -245,7 +248,90 @@
                 </div>
             </div>
         </section>
+        <section id="special-offers">
+            <div class="container">
+                <div class="content-wrapper">
+                    <h1 class="title">
+                        SPECIAL
+                        <span class="text-primary">
+                            OFFERS
+                        </span>
+                    </h1>
 
+                    <div class="row">
+                        <div class="col-12 col-md-8 left">
+                            <div class="row">
+                                <div class="col-6 d-flex justify-content-center flex-column">
+                                    <h2 class="offer-title text-white font-weight-bold">GEBYAR RAMADHAN</h2>
+                                    <h2 class="offer-desc text-dark font-weight-bold">DISCOUNT <br> UP TO <br>70% </h2>
+                                </div>
+                                <div class="col-6 p-0 m-0 offer-img">
+                                    <img src="./images//offers/offers1-1.png" alt="" width="100%" height="100%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 right">
+                            <img src="./images/offers/offers-3.png" alt="">
+                            <div class="mt-2"></div>
+                            <img src="./images/offers/offers-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="csr-events">
+            <div class="container">
+                <div class="content-wrapper">
+                    <h1 class="title">CSR & <span class="text-primary">EVENTS</span></h1>
+                    <div class="row mx-auto">
+                        <div class="col-sm-6 col-md p-0 mx-2 position-relative"
+                            style="background-image: url(./images/event-1.png);background-size: cover; background-position: center center; height: 250px;">
+                            <div class="p-2 position-absolute text-white bg-dark" style="bottom: 0;opacity: .5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse</p>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md p-0 mx-2 position-relative"
+                            style="background-image: url(./images/event-1.png);background-size: cover; background-position: center center; height: 250px;">
+                            <div class="p-2 position-absolute text-white bg-dark" style="bottom: 0;opacity: .5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse</p>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md p-0 mx-2 position-relative"
+                            style="background-image: url(./images/event-1.png);background-size: cover; background-position: center center; height: 250px;">
+                            <div class="p-2 position-absolute text-white bg-dark" style="bottom: 0;opacity: .5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-auto mt-3">
+                        <div class="col-sm-6 col-md p-0 mx-2 position-relative"
+                            style="background-image: url(./images/event-1.png);background-size: cover; background-position: center center; height: 250px;">
+                            <div class="p-2 position-absolute text-white bg-dark" style="bottom: 0;opacity: .5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse</p>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md p-0 mx-2 position-relative"
+                            style="background-image: url(./images/event-1.png);background-size: cover; background-position: center center; height: 250px;">
+                            <div class="p-2 position-absolute text-white bg-dark" style="bottom: 0;opacity: .5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse</p>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md p-0 mx-2 position-relative"
+                            style="background-image: url(./images/event-1.png);background-size: cover; background-position: center center; height: 250px;">
+                            <div class="p-2 position-absolute text-white bg-dark" style="bottom: 0;opacity: .5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
